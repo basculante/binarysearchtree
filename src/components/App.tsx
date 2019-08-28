@@ -19,11 +19,11 @@ class App extends React.Component<any, IState>{
     const tree = myArray.map((number, index) => {
       node.insert(number);
     })
-    this.setState({ node })
+    this.setState({ node }, this.containBST)
   }
 
   containBST() {
-    
+    this.state.node.contains(80);
   }
 
   componentDidMount() {

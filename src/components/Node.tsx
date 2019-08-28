@@ -28,8 +28,10 @@ export default class Node {
 
     if (this._data < data && this._right) {
        this._right.contains(data);
+       console.log("yes")
     } else if (this._data > data && this._left) {
        this._left.contains(data);
+       console.log("no")
     }
 
     return null;
